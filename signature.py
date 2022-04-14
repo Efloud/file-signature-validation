@@ -2,9 +2,9 @@ import os
 path = input(" file path : ")
 os.chdir(path)
 
-sayi = 0
+number = 0
 for i in os.listdir(path): 
-	sayi += 1
+	number += 1
 	with open(i, "rb") as f:
 		oku = f.read(10)
 		if oku[6:11] in [b"JFIF", b"Exif"]:
@@ -27,7 +27,6 @@ for i in os.listdir(path):
 
 		else:
 			print("Türü Bilinmeyen Dosya !!! ")
-print("\n"*3)
-
-print(" [+] {} dosya tarandı".format(sayi).rjust(30), "\n")
+print("\n"*2)
+print(" [+] {} dosya tarandı".format(number).rjust(30), "\n")
 f.close()
