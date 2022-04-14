@@ -28,5 +28,5 @@ for i in os.listdir(path):
 		else:
 			print("Türü Bilinmeyen Dosya !!! ")
 print("\n"*2)
-print(" [+] {} dosya tarandı".format(number).rjust(30), "\n")
+print(" [+] {} dosya tarandı".format(number).rjust(50), "\n")
 f.close()
