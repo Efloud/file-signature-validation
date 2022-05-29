@@ -1,6 +1,6 @@
 import os
 path = input(" file path : ")
-print("\n)
+print("\n")
 os.chdir(path)
 
 number = 0
